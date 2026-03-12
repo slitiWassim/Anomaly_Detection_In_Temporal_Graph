@@ -13,9 +13,6 @@ import logging
 import mlflow
 import mlflow.pytorch
 
-project_root = Path.cwd().parent
-sys.path.append(str(project_root))
-
 from src.dataset import load_dataset
 from src.history import History
 from src.loader import EventLoader

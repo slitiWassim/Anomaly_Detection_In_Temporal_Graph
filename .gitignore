@@ -3,6 +3,20 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+
+# Data Folder
+data
+
+# logging and experiment tracking folders 
+mlruns
+log
+
+# Model Weights
+*.pt
+
+# Databases .db files 
+*.db
+
 # C extensions
 *.so
 
