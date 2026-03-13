@@ -230,7 +230,8 @@ if not os.path.exists('log'):
 logging.basicConfig(
     format="%(asctime)s - %(levelname)s - %(message)s",
     level=logging.INFO,
-    filename=f'log/train_{args.dataset}.txt'
+    filename=f'log/{osp.basename(__file__)[:-3]}_{args.dataset}.txt',
+    force=True
 )
 
 log = logging.getLogger()
